@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/header.css">
+	<link rel="stylesheet" href="CSS/paymentgate.css">
+	<link rel="stylesheet" href="CSS/footer.css">
+	<!-- Payment JS Validation -->
+	<script src="./JS/payement.js"></script>
+</head>
+<!-- Header starts here -->
+<header>
+	<a href="#" class="logo">
+		<img src="Img/SkillUP dark.png" width="100px" height="100px" alt="Academy logo" />
+	</a>
+	<navbar>
+		<a href="#" class="active">Home</a>
+		<a href="CourseHome.html">Courses</a>
+		<a href="Lessons.html">lessons</a>
+		<a href="Contact.html">Contact</a>
+		<a href="FAQ.html">FAQ</a>
+		<a href="login.html">Login</a>
+	</navbar>
+	<search_bar>
+		<form class="search">
+			<input type="text" placeholder="Search....." class="input">
+			<button type="submit" class="button">
+				<i class="ri-search-2-line"></i>
+			</button>
+		</form>
+	</search_bar>
+</header>
+<!-- Header ends here -->
+<body>
+	<div class="container">
+		<form name="myForm" method="POST" action="paymentgateway.php" onsubmit="return validateForm()">
+			<div class="row">
+				<div class="col">
+					<h3 class="title">Billing Address</h3>
+					<div class="inputbox">
+						<span>Full Name:</span>
+						<input type="text" name="fname" placeholder="David Andrew" required>
+					</div>
+					<div class="inputbox">
+						<span>Email:</span>
+						<input type="email" name="email" placeholder="david12345@gmail.com" required>
+					</div>
+					<div class="inputbox">
+						<span>Address:</span>
+						<input type="text" name="address" placeholder="544/3" required>
+					</div>
+					<div class="inputbox">
+						<span>City:</span>
+						<input type="text" name="city" placeholder="California" required>
+					</div>
+					<div class="flex">
+						<div class="inputbox">
+							<span>State:</span>
+							<input type="text" name="state" placeholder="United State" required>
+						</div>
+					</div>
+					<div class="inputbox">
+						<span>PO Box:</span>
+						<input type="number" name="poBox" placeholder="123456" required>
+					</div>
+				</div>
+
+				<div class="col">
+					<h3 class="title">Payment Details</h3>
+
+					<div class="inputbox">
+						<span>Name on card:</span>
+						<input type="text" name="NameOnCard" placeholder="David Andrew">
+					</div>
+					<div class="inputbox">
+						<span>Card Number:</span>
+						<input type="number" name="CardNumber" placeholder="1111-2222-3333-4444">
+					</div>
+					<div class="inputbox">
+						<span>Exp Month:</span>
+						<input type="text" name="ExpMn" placeholder="January">
+					</div>
+					<div class="flex">
+						<div class="inputbox">
+							<span>Exp Year:</span>
+							<input type="number" name="ExpYr" placeholder="2022">
+						</div>
+					</div>
+					<div class="inputbox">
+						<input type="number" name="CVV" placeholder="123">
+					</div>
+					<span>CVV:</span>
+					<div class="inputbox">
+						<span>Accepted Payment Methods:</span>
+						<img src="Img/paymentgate/paymethods.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<input type="submit" name="submit" value="Proceed to pay" class="submitBtn">
+		</form>
+	</div>
+	<script src="JS/header.js"></script>
+
+	<div class="footer">
+		<div class="foo_container">
+			<div class="foo_row">
+				<div>
+					<img src="Img/SkillUP dark.png" width="200px" height="200px">
+				</div>
+				<div class="footer-col">
+					<h4>SkillUP</h4>
+					<ul>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Payments</a></li>
+						<li><a href="#">Privacy policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Follow us on</h4>
+					<div class="social-links">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-Instagram"></i></a>
+						<a href="#"><i class="fab fa-Linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</head>
+
+</html>

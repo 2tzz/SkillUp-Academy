@@ -1,0 +1,16 @@
+
+.body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg,rgba(57, 187, 53, 0.4)50%,rgb(241, 146, 36)50%);
+}
+
+  .bgImg{
+        width:fit-content;
+        height:fit-content;
+        background-image: url('img_flowers.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        border: 1px solid red;
+  }
+  

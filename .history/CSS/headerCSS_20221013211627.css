@@ -1,0 +1,22 @@
+
+.wrapper {
+    width: 500px;
+    display: grid;
+    flex-wrap: wrap;
+  }
+  .wrapper > div {
+    flex: 1 1 150px;
+  }
+
+  .header{
+    overflow: hidden;
+    height: 100px;
+    background-color: burlywood;
+    background-repeat:repeat;
+    background-size:contain ;
+    display: inline-flexbox;
+    
+}
+.searchBar{
+    float: right;
+}

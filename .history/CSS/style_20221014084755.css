@@ -1,0 +1,31 @@
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg,rgba(57, 187, 53, 0.4)100%,rgb(241, 146, 36)100%);
+}
+.Container-1{
+          height: 50%; 
+          background: coral;
+          padding: 0;
+          margin: 0;
+          border: 2px;
+          border-color: black;
+          width: 90%;
+          margin-left: 0;
+          min-height: 50vh;
+}
+
+p text{
+  background-image: url(/Img/wallpaperflare.com_wallpaper\ \(30\).jpg);
+}
+
+  .bgImg{
+        width:fit-content;
+        height:fit-content;
+        
+        background-repeat: no-repeat;
+        background-size:contain;
+        border: 1px solid red;
+  }
+  

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/header2.css">
+        <link rel="stylesheet" href="CSS/Flickity.css" media="screen">
+        <script src="JS/header.js"></script>
+        <script src="/JS/script.js"
+        <title>Homepage</title>
+        <style>
+            body{
+                width: 100%;
+                height: 100vh;
+                background-image: linear-gradient(0deg,rgba(57, 187, 53, 0.4)50%,rgb(241, 146, 36)100%);
+            }
+        </style>
+    </head>
+    <body>
+        <script src="/JS/Flickity.js"></script>
+        <div class="header" >
+            <div class="row">
+                <div class="col first">
+                    <div id="logoImgContainer">
+                        <img src="Img/SkillUP light.png" width="100px" height="100px" alt="Academy logo"/>
+                    </div>
+                    <div id="text_heading">
+                        The Training Academy
+                    </div>
+                </div>
+                <div class="col second">
+                    <div class="row">
+                        <form class="search">
+                            <input type="text" placeholder="Search....." class="input">
+                        <button type="submit" class="button">
+                            <i class="ri-search-2-line"></i>
+                        </button>
+                        </form>
+                    </div>
+                    <div class="row2" >
+                        <nav class="topnav" id="myTopnav">
+                            <a href="#" class="active">Home</a>
+                            <a href="CourseHome.html">Courses</a>
+                            <a href="Lessons.html">lessons</a>
+                            <a href="Contact.html">Contact</a>
+                            <a href="FAQ.html">FAQ</a>
+                            <a href="login.html">Login</a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Carousal-->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="/Img/CarousalImages/Caro1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/Img/CarousalImages/Caro2.jpg alt="">
+                </div>
+                <div class="slide">
+                    <img src="/Img/CarousalImages/Caro3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/Img/CarousalImages/Caro1.jpg" alt="">
+                </div>
+                <!-- image end -->
+                <!-- nav start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <!-- manual nav -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <script type="/JS/script">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio')+counter           })
+        </script>
+    </body>
+
+        
